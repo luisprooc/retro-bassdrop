@@ -1,13 +1,16 @@
 import React from 'react';
-
+import Cube from './components/cube';
+import Panel from './components/panel';
+import Title from './components/title';
 
 const App = () => {
   return(
     <div className="container">
-      <h1 className="py-5 text-center">RETRO BASS DROP</h1>
-      <div className="d-flex justify-content-center flex-column align-items-center">
-        
-      </div>
+      <Title 
+          title="RETRO BASS DROP"
+      />
+      <Cube />
+      <Panel />
     </div>
   );
 };

@@ -1,0 +1,48 @@
+
+.cube,.cube-w{
+    background-color: aliceblue;
+    height: 5rem;
+    width: 4rem;
+    border: 3px silver outset;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+
+.cube:hover,.cube-w:hover{
+    transform: scale(1.2);
+    transition: 500ms ease;
+}
+
+.cube-w{
+    background-color: gainsboro;
+}
+
+.cube-play{
+    animation: sound 800ms ease infinite;
+    
+}
+
+@media (min-width: 768px) { 
+
+    .cube,.cube-w{
+        height: 8rem;
+        width: 6rem;
+    }
+
+    .cube-container{
+        padding: 0 7%;
+    }
+}
+
+@media (min-width: 1200px) { 
+
+    .cube-container{
+        padding: 0 20%;
+    }
+}
+
+
+@keyframes sound {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
