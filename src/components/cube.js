@@ -1,67 +1,44 @@
 import React,{useState} from 'react';
 import '../styles/cube.css';
+import Sounds from '../sounds/sound.json';
 
 const Cube = () => {
 
-    const [play,setPlay] = useState(false);
-
+    // When user clicks a cube, add class for animate cube
     const playSound = (e) => {
-        console.log(e.target.id);
-        play?setPlay(false):setPlay(true);
+
+        // If cube play music, shutdowm music
+        if(e.target.classList.contains("cube-play")){
+            e.target.classList.remove("cube-play");
+            return;
+        }
+
+        // Turn on music
+        e.target.classList.add("cube-play");
     };
-    
+
+    // Destructuring to sounds from json 
+    const {sounds} = Sounds;
+
 
     return(
         <div className="d-flex justify-content-center flex-column align-items-center cube-container">
             <div className="row justify-content-center">
-                <div className={`col-8 cube ${play?"cube-play":""}`} id={1} onClick={(e)=>playSound(e)}>
-                    <br />
-                </div>
-                <div className="col-8 cube" id={2} onClick={(e)=>playSound(e)}>
-                    <br />
-                </div>
-                <div className="col-8 cube">
-                    <br />
-                </div>
-                <div className="col-8 cube">
-                    <br />
-                </div>
-                <div className="col-8 cube">
-                    <br />
-                </div>
-                <div className="col-8 cube-w">
-                    <br />
-                </div>
-                <div className="col-8 cube">
-                    <br />
-                </div>
-                <div className="col-8 cube">
-                    <br />
-                </div>
-                <div className="col-8 cube">
-                    <br />
-                </div>
-                <div className="col-8 cube">
-                    <br />
-                </div>
-                <div className="col-8 cube">
-                    <br />
-                </div>
-                <div className="col-8 cube">
-                    <br />
-                </div>
-                <div className="col-8 cube">
-                    <br />
-                </div>
-                <div className="col-8 cube">
-                    <br />
-                </div>
-                <div className="col-8 cube">
-                    <br />
-                </div>
-                <div className="col-8 cube">
-                    <br />
-                </div>
+
+                {
+                    sounds.map((s,index) => {
+
+                        const {id} = s;
+                        
+                        // map cube and generate it depends its index
+                        return(
+                            <div key={id} className={`col-8 ${index!==0 && index % 2 !== 0?"cube-w":"cube"}`} onClick={(e)=>playSound(e)}>
+                                <br />
+                            </div>
+                        );
+                    })
+                }
+
             </div>
         </div>
     );
