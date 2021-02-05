@@ -1,0 +1,14 @@
+footer{
+    background-color: #000080;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 2.5rem;
+    padding-top: 5rem;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px royalblue;
+}
+
+h5{
+    transform: translateY(-2.5rem);
+}

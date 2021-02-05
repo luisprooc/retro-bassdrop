@@ -10,11 +10,12 @@ const App = () => {
       <Title 
           title="RETRO BASS TRAP"
       />
+      
       <Cube />
       <Panel />
       
       {/* Props children*/}
-      <Footer>HOLA </Footer>
+      <Footer>LUISPROOC 💙 </Footer>
     </div>
   );
 };

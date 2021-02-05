@@ -18,7 +18,7 @@
 }
 
 .cube-play{
-    animation: sound 1200ms ease infinite;
+    animation: sound 1300ms ease infinite;
     
 }
 
@@ -43,6 +43,6 @@
 
 
 @keyframes sound {
-    from {background-color: plum;}
-    to {background-color: palevioletred;}
+    from {background-color: SteelBlue;}
+    to {background-color: white;}
 }

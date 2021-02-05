@@ -1,10 +1,11 @@
 import React from 'react';
+import '../styles/footer.css';
 
-const Footer = (props) => {
+const Footer = ({children}) => {
     return(
-        <>
-            {props.children}
-        </>
+        <footer>
+            <h5>By: {children}</h5>
+        </footer>
     );
 };
 

@@ -1,6 +1,7 @@
-import React,{useState} from 'react';
+import React from 'react';
 import '../styles/cube.css';
-import Sounds from '../sounds/sound.json';
+import Sounds from './sound.json';
+import Player from './player';
 
 const Cube = () => {
 
@@ -28,12 +29,12 @@ const Cube = () => {
                 {
                     sounds.map((s,index) => {
 
-                        const {id} = s;
+                        const {id,src,play} = s;
                         
                         // map cube and generate it depends its index
                         return(
-                            <div key={id} className={`col-8 ${index!==0 && index % 2 !== 0?"cube-w":"cube"}`} onClick={(e)=>playSound(e)}>
-                                <br />
+                            <div key={id} className={`col-8 ${index!==0 && index % 2 !== 0?"cube-w":"cube"}`}  onClick={(e)=>playSound(e)}>
+                                <Player src={src}/>
                             </div>
                         );
                     })

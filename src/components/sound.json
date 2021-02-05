@@ -1,0 +1,70 @@
+{
+    "sounds":[
+        {
+            "id": 1,
+            "src": "../../public/sounds/prueba.mp3",
+            "play":"true"
+        },
+        {
+            "id": 2,
+            "src": "source.mp3"
+        },
+        {
+            "id": 3,
+            "src": "source.mp3"
+        },
+        {
+            "id": 4,
+            "src": "source.mp3"
+        },
+        {
+            "id": 5,
+            "src": "source.mp3"
+        },
+        {
+            "id": 6,
+            "src": "source.mp3"
+        },
+        {
+            "id": 7,
+            "src": "source.mp3"
+        },
+        {
+            "id": 8,
+            "src": "source.mp3"
+        },
+        {
+            "id": 9,
+            "src": "source.mp3"
+        },
+        {
+            "id": 10,
+            "src": "source.mp3"
+        },
+        {
+            "id": 11,
+            "src": "source.mp3"
+        },
+        {
+            "id": 12,
+            "src": "source.mp3"
+        },
+        {
+            "id": 13,
+            "src": "source.mp3"
+        },
+        {
+            "id": 14,
+            "src": "source.mp3"
+        },
+        {
+            "id": 15,
+            "src": "source.mp3"
+        },
+        {
+            "id": 16,
+            "src": "source.mp3"
+        }
+    ]
+}
+
