@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactHowler from 'react-howler';
 
-const Player = ( source ) => {
+const Player = ( {src} ) => {
+
+    useEffect(()=>{
+
+    },[src])
 
     return(
         <ReactHowler 
-            src={source.src}
+            src={src}
             playing
-            preload={true}
-            html5
-            volume={0.9}
+            preload
+            loop
         />
 
     )

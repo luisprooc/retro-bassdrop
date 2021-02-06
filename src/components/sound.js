@@ -1,17 +1,17 @@
-{
-    "sounds":[
+import Pruebin from '../sounds/prueba.mp3';
+
+const Sounds = [
         {
             "id": 1,
-            "src": "../../public/sounds/prueba.mp3",
-            "play":"true"
+            "src": Pruebin
         },
         {
             "id": 2,
-            "src": "source.mp3"
+            "src": "source1.mp3"
         },
         {
             "id": 3,
-            "src": "source.mp3"
+            "src": "source2.mp3"
         },
         {
             "id": 4,
@@ -65,6 +65,9 @@
             "id": 16,
             "src": "source.mp3"
         }
-    ]
-}
+];
+
+
+export default Sounds;
+
 

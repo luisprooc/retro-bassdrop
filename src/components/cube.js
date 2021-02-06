@@ -1,25 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/cube.css';
-import Sounds from './sound.json';
+import Sounds from './sound';
 import Player from './player';
 
 const Cube = () => {
+    const [playSounds,setPlaySounds] = useState([]);
 
     // When user clicks a cube, add class for animate cube
-    const playSound = (e) => {
+    const playSound = (e,src) => {
 
         // If cube play music, shutdowm music
         if(e.target.classList.contains("cube-play")){
             e.target.classList.remove("cube-play");
+
+            // Delete sound from state
+            const sounds = playSounds.filter(p => p!== src);
+            setPlaySounds(sounds);
             return;
         }
 
         // Turn on music
+        setPlaySounds([...playSounds,src]);
+
+        // Turn animation
         e.target.classList.add("cube-play");
     };
-
-    // Destructuring to sounds from json 
-    const {sounds} = Sounds;
 
 
     return(
@@ -27,14 +32,14 @@ const Cube = () => {
             <div className="row justify-content-center">
 
                 {
-                    sounds.map((s,index) => {
+                    Sounds.map((s,index) => {
 
-                        const {id,src,play} = s;
+                        const {id,src} = s;
                         
                         // map cube and generate it depends its index
                         return(
-                            <div key={id} className={`col-8 ${index!==0 && index % 2 !== 0?"cube-w":"cube"}`}  onClick={(e)=>playSound(e)}>
-                                <Player src={src}/>
+                            <div key={id} className={`col-8 ${index!==0 && index % 2 !== 0?"cube-w":"cube"}`}  onClick={(e)=>playSound(e,src)}>
+                                {playSounds.length > 0?<Player src={src}/>:null}
                             </div>
                         );
                     })
