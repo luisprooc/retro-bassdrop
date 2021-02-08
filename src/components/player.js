@@ -1,11 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ReactHowler from 'react-howler';
 
 const Player = ( {src} ) => {
-
-    useEffect(()=>{
-
-    },[src])
 
     return(
         <ReactHowler 

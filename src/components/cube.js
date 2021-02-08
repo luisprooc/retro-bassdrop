@@ -39,7 +39,7 @@ const Cube = () => {
                         // map cube and generate it depends its index
                         return(
                             <div key={id} className={`col-8 ${index!==0 && index % 2 !== 0?"cube-w":"cube"}`}  onClick={(e)=>playSound(e,src)}>
-                                {playSounds.length > 0?<Player src={src}/>:null}
+                                {playSounds.length > 0? playSounds.map((item,i) => <Player key={i} src={item}/>) :null}
                             </div>
                         );
                     })

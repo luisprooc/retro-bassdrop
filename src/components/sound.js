@@ -1,4 +1,5 @@
 import Pruebin from '../sounds/prueba.mp3';
+import Other from '../sounds/other.mp3'
 
 const Sounds = [
         {
@@ -7,7 +8,7 @@ const Sounds = [
         },
         {
             "id": 2,
-            "src": "source1.mp3"
+            "src": Other
         },
         {
             "id": 3,
