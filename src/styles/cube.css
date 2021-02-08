@@ -17,10 +17,6 @@
     background-color: gainsboro;
 }
 
-.cube-play{
-    animation: sound 1300ms ease infinite;
-    
-}
 
 @media (min-width: 768px) { 
 
@@ -41,8 +37,7 @@
     }
 }
 
-
-@keyframes sound {
-    from {background-color: SteelBlue;}
-    to {background-color: white;}
+p{
+    color: royalblue;
+    transform: translateX(-0.5rem);
 }

@@ -1,70 +1,85 @@
-import Pruebin from '../sounds/prueba.mp3';
-import Other from '../sounds/other.mp3'
+import playlist from './playlist';
 
 const Sounds = [
         {
             "id": 1,
-            "src": Pruebin
+            "src": playlist.Bass1,
+            "name": "Bass1"
         },
         {
             "id": 2,
-            "src": Other
+            "src": playlist.Bass2,
+            "name": "Bass2"
         },
         {
             "id": 3,
-            "src": "source2.mp3"
+            "src": playlist.Avengers,
+            "name": "Avengers"
         },
         {
             "id": 4,
-            "src": "source.mp3"
+            "src": playlist.Chavo,
+            "name": "Chavo"
         },
         {
             "id": 5,
-            "src": "source.mp3"
+            "src":  playlist.GameThrones,
+            "name": "Game of Thrones"
         },
         {
             "id": 6,
-            "src": "source.mp3"
+            "src": playlist.Pacman,
+            "name": "Pacman"
         },
         {
             "id": 7,
-            "src": "source.mp3"
+            "src": playlist.Rocky,
+            "name": "Rocky"
         },
         {
             "id": 8,
-            "src": "source.mp3"
+            "src": playlist.startWars,
+            "name": "Start Wars"
         },
         {
             "id": 9,
-            "src": "source.mp3"
+            "src": playlist.superMario,
+            "name": "super Mario"
         },
         {
             "id": 10,
-            "src": "source.mp3"
+            "src": "source.mp3",
+            "name": "super Mario"
         },
         {
             "id": 11,
-            "src": "source.mp3"
+            "src": "source.mp3",
+            "name": "super Mario"
         },
         {
             "id": 12,
-            "src": "source.mp3"
+            "src": "source.mp3",
+            "name": "super Mario"
         },
         {
             "id": 13,
-            "src": "source.mp3"
+            "src": "source.mp3",
+            "name": "super Mario"
         },
         {
             "id": 14,
-            "src": "source.mp3"
+            "src": "source.mp3",
+            "name": "super Mario"
         },
         {
             "id": 15,
-            "src": "source.mp3"
+            "src": "source.mp3",
+            "name": "super Mario"
         },
         {
             "id": 16,
-            "src": "source.mp3"
+            "src": "source.mp3",
+            "name": "super Mario"
         }
 ];
 

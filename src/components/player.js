@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactHowler from 'react-howler';
 
-const Player = ( {src} ) => {
+const Player = ( {src} ) => (
 
-    return(
-        <ReactHowler 
-            src={src}
-            playing
-            preload
-            loop
-        />
+    <ReactHowler 
+        src={src}
+        playing
+        preload
+        html5
+    />
 
-    )
-};
+);
 
 export default Player;

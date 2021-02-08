@@ -5,25 +5,30 @@ import Player from './player';
 
 const Cube = () => {
     const [playSounds,setPlaySounds] = useState([]);
+    const [nameSound, setNameSound] = useState("");
 
     // When user clicks a cube, add class for animate cube
-    const playSound = (e,src) => {
+    const playSound = (e,src,name) => {
 
         // If cube play music, shutdowm music
+
         if(e.target.classList.contains("cube-play")){
+
             e.target.classList.remove("cube-play");
 
             // Delete sound from state
-            const sounds = playSounds.filter(p => p!== src);
-            setPlaySounds(sounds);
+        
+            setPlaySounds(playSounds.filter(p => p!== src));
             return;
         }
 
         // Turn on music
-        setPlaySounds([...playSounds,src]);
+        setPlaySounds([src]);
+        setNameSound(name);
 
         // Turn animation
         e.target.classList.add("cube-play");
+
     };
 
 
@@ -34,12 +39,13 @@ const Cube = () => {
                 {
                     Sounds.map((s,index) => {
 
-                        const {id,src} = s;
+                        const {id,src, name} = s;
                         
                         // map cube and generate it depends its index
                         return(
-                            <div key={id} className={`col-8 ${index!==0 && index % 2 !== 0?"cube-w":"cube"}`}  onClick={(e)=>playSound(e,src)}>
-                                {playSounds.length > 0? playSounds.map((item,i) => <Player key={i} src={item}/>) :null}
+                            <div key={id} className={`col-8 ${index!==0 && index % 2 !== 0?"cube-w":"cube"}`}  onClick={ (e)=>playSound(e,src,name) }>
+                                <div><p>{name}</p></div>
+                                {playSound && playSounds.map((item,i) => <Player key={i} src={item}/>)}
                             </div>
                         );
                     })
@@ -52,3 +58,4 @@ const Cube = () => {
 
 export default Cube;
 
+// playSounds.map((item,i) => <Player key={i} src={item}/>)
