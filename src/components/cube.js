@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/cube.css';
 import Sounds from './sound';
 import Player from './player';
+import Panel from './panel';
 
 const Cube = () => {
     const [playSounds,setPlaySounds] = useState([]);
@@ -50,12 +51,12 @@ const Cube = () => {
                         );
                     })
                 }
-
+                
+                {/* Show the last sound*/}
+                { nameSound && <Panel nameSound={nameSound}/> }
             </div>
         </div>
     );
 };
 
 export default Cube;
-
-// playSounds.map((item,i) => <Player key={i} src={item}/>)

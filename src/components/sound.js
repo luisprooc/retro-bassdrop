@@ -13,18 +13,18 @@ const Sounds = [
         },
         {
             "id": 3,
-            "src": playlist.Avengers,
-            "name": "Avengers"
+            "src": playlist.MarioKart,
+            "name": "Mario Kart"
         },
         {
             "id": 4,
-            "src": playlist.Chavo,
-            "name": "Chavo"
+            "src": playlist.Angry,
+            "name": "Angry Birds"
         },
         {
             "id": 5,
-            "src":  playlist.GameThrones,
-            "name": "Game of Thrones"
+            "src":  playlist.Kirby,
+            "name": "Kirby"
         },
         {
             "id": 6,
@@ -33,53 +33,53 @@ const Sounds = [
         },
         {
             "id": 7,
-            "src": playlist.Rocky,
-            "name": "Rocky"
+            "src": playlist.AnimalCrossing,
+            "name": "Animal Crossing"
         },
         {
             "id": 8,
-            "src": playlist.startWars,
-            "name": "Start Wars"
+            "src": playlist.StreetFighter,
+            "name": "Street Fighter"
         },
         {
             "id": 9,
             "src": playlist.superMario,
-            "name": "super Mario"
+            "name": "Super Mario"
         },
         {
             "id": 10,
-            "src": "source.mp3",
-            "name": "super Mario"
+            "src": playlist.Atari,
+            "name": "Atari"
         },
         {
             "id": 11,
-            "src": "source.mp3",
-            "name": "super Mario"
+            "src": playlist.Assasing,
+            "name": "Assasing Creed"
         },
         {
             "id": 12,
-            "src": "source.mp3",
-            "name": "super Mario"
+            "src": playlist.Bomberman,
+            "name": "Bomberman"
         },
         {
             "id": 13,
-            "src": "source.mp3",
-            "name": "super Mario"
+            "src": playlist.CR,
+            "name": "Clash Royale"
         },
         {
             "id": 14,
-            "src": "source.mp3",
-            "name": "super Mario"
+            "src": playlist.DK,
+            "name": "Donkey Kong"
         },
         {
             "id": 15,
-            "src": "source.mp3",
-            "name": "super Mario"
+            "src": playlist.Galaxian,
+            "name": "Galaxian"
         },
         {
             "id": 16,
-            "src": "source.mp3",
-            "name": "super Mario"
+            "src": playlist.GTA,
+            "name": "GTA San Andreas"
         }
 ];
 

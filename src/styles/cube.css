@@ -40,4 +40,5 @@
 p{
     color: royalblue;
     transform: translateX(-0.5rem);
+    text-decoration: underline;
 }

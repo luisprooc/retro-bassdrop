@@ -8,6 +8,7 @@ const Player = ( {src} ) => (
         playing
         preload
         html5
+        volume={0.2}
     />
 
 );
